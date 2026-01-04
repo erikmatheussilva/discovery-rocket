@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="">
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Projeto</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="container">
+      <div id="profile">
+        <img
+          id="profilePic"
+          src="./assets/profilepic.png"
+          alt="Profile Picture"
+        />
+        <p>@somdovazio</p>
+      </div>
+      <div id="theme-switch" onclick="switchTheme(); changeProfilePic()">
+        <button aria-label="Toggle Theme"></button>
+        <span></span>
+      </div>
+      <ul id="links">
+        <li>
+          <a href="https://www.youtube.com/@somdovazio5551" target="_blank">
+            <ion-icon name="logo-youtube"></ion-icon>
+            Youtube Channel
+          </a>
+        </li>
+        <li>
+          <a href="https://soundcloud.com/somdovazio" target="_blank">
+            <ion-icon name="logo-soundcloud"></ion-icon>
+            Soundcloud
+          </a>
+        </li>
+        <li>
+          <a href="https://somdovazio.bandcamp.com" target="_blank">
+            <img
+              id="bandcamp-logo"
+              src="./assets/bc-logo.png"
+              alt="Bandcamp Icon"
+              width="30"
+              height="30"
+            />
+            Bandcamp
+          </a>
+        </li>
+        <li>
+          <a href="https://www.beatstars.com/dngnsnds" target="_blank">
+            <img
+              id="beatstars-logo"
+              src="assets/bs-logo-red.svg"
+              alt="beatstars-logo"
+              width="20"
+              height="20"
+            />
+            Beatstars
+          </a>
+        </li>
+      </ul>
+      <footer>
+        <p>Made with ❤️ by somdovazio</p>
+      </footer>
+    </div>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+    <script src="index.js"></script>
+  </body>
+</html>

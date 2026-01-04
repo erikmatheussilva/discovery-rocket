@@ -1,0 +1,140 @@
+/*reset styles*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --text-color: #ffffff;
+  --bg-url: url(./assets/bg-desktop.jpg);
+  --stroke-color: rgba(255, 255, 255, 0.5);
+  --surface-color: rgba(255, 255, 255, 0.1);
+  --surface-hover-color: rgba(255, 255, 255, 0.2);
+  --theme-switch-icon: url(./assets/moon-stars.svg);
+}
+
+.light {
+  --text-color: #000000;
+  --bg-url: url(./assets/bg-desktop-light.jpg);
+  --stroke-color: rgba(0, 0, 0, 0.5);
+  --surface-color: rgba(255, 255, 255, 0.05);
+  --surface-hover-color: rgba(255, 255, 255, 0.1);
+  --theme-switch-icon: url(./assets/sun.svg);
+}
+/*body styles*/
+body {
+  background: var(--bg-url) no-repeat top center/cover;
+}
+body * {
+  font-family: "Inter", sans-serif;
+  color: var(--text-color);
+}
+
+#container {
+  width: 588px;
+  height: 712px;
+  margin: auto;
+  margin-top: 56px;
+}
+/*profile styles*/
+#profile {
+  padding: 34px;
+  text-align: center;
+}
+#profile img {
+  width: 112px;
+}
+#profile p {
+  font-weight: 500;
+  line-height: 24px;
+}
+/*theme switch styles*/
+#theme-switch {
+  position: relative;
+  width: 64px;
+  margin: 4px auto;
+}
+
+#theme-switch button {
+  height: 32px;
+  width: 32px;
+  border: none;
+  background: white var(--theme-switch-icon) no-repeat center;
+  border-radius: 50%;
+  z-index: 1;
+  position: absolute;
+  left: 0;
+  transform: translateY(-50%);
+  top: 50%;
+}
+
+#theme-switch button:hover {
+  outline: 6px solid var(--surface-hover-color);
+}
+
+.light #theme-switch button {
+  left: auto;
+  right: 0;
+}
+
+.light #theme-switch button:hover {
+  outline: 6px solid rgba(0, 0, 0, 0.2);
+}
+
+#theme-switch span {
+  display: block;
+  width: 64px;
+  height: 24px;
+  background: var(--surface-color);
+  border: 1px solid var(--stroke-color);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  border-radius: 9999px;
+}
+
+/*links styles*/
+ul {
+  margin-top: 42px;
+  list-style: none;
+  gap: 16px;
+  display: flex;
+  flex-direction: column;
+}
+
+ul li a {
+  max-height: 56px;
+  display: flex;
+  padding: 16px 24px;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  border-radius: 8px;
+  background: var(--surface-color);
+  border: 1px solid var(--stroke-color);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  font-weight: 500;
+  transition: background 0.6s;
+}
+
+ul li a:hover {
+  background: var(--surface-hover-color);
+  border: 1.5px solid var(--text-color);
+}
+ul li a ion-icon {
+  margin-right: 8px;
+}
+#bandcamp-logo {
+  margin-right: 8px;
+}
+
+#beatstars-logo {
+  margin-right: 8px;
+}
+/*footer styles*/
+footer {
+  text-align: center;
+  margin-top: 24px;
+  font-size: 14px;
+  color: var(--text-color);
+}
